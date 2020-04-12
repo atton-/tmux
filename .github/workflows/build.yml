@@ -1,0 +1,19 @@
+name: build border-ascii
+
+on: [push, pull_request]
+
+jobs:
+  build-centos:
+    runs-on: ubuntu-latest
+    container: docker://centos
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies by dnf
+        run: dnf install -y autoconf automake byacc gcc glibc-langpack-en libevent libevent-devel make ncurses ncurses-devel
+      - name: Build from source
+        run: |
+          sh autogen.sh
+          ./configure --disable-dependency-tracking
+          make
+      - name: Check version
+        run: ./tmux -V
