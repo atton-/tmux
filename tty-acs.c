@@ -44,27 +44,27 @@ static const struct tty_acs_entry tty_acs_table[] = {
 	{ 'g', "\302\261" },		/* plus/minus */
 	{ 'h', "\342\220\244" },
 	{ 'i', "\342\220\213" },
-	{ 'j', "\342\224\230" },	/* lower right corner */
-	{ 'k', "\342\224\220" },	/* upper right corner */
-	{ 'l', "\342\224\214" },	/* upper left corner */
-	{ 'm', "\342\224\224" },	/* lower left corner */
-	{ 'n', "\342\224\274" },	/* large plus or crossover */
+	{ 'j', "+"},	/* lower right corner */
+	{ 'k', "+"},	/* upper right corner */
+	{ 'l', "+"},	/* upper left corner */
+	{ 'm', "+"},	/* lower left corner */
+	{ 'n', "+"},	/* large plus or crossover */
 	{ 'o', "\342\216\272" },	/* scan line 1 */
 	{ 'p', "\342\216\273" },	/* scan line 3 */
-	{ 'q', "\342\224\200" },	/* horizontal line */
+	{ 'q', "-"},	/* horizontal line */
 	{ 'r', "\342\216\274" },	/* scan line 7 */
 	{ 's', "\342\216\275" },	/* scan line 9 */
-	{ 't', "\342\224\234" },	/* tee pointing right */
-	{ 'u', "\342\224\244" },	/* tee pointing left */
-	{ 'v', "\342\224\264" },	/* tee pointing up */
-	{ 'w', "\342\224\254" },	/* tee pointing down */
-	{ 'x', "\342\224\202" },	/* vertical line */
+	{ 't', "+"},	/* tee pointing right */
+	{ 'u', "+"},	/* tee pointing left */
+	{ 'v', "+"},	/* tee pointing up */
+	{ 'w', "+"},	/* tee pointing down */
+	{ 'x', "|"},	/* vertical line */
 	{ 'y', "\342\211\244" },	/* less-than-or-equal-to */
 	{ 'z', "\342\211\245" },	/* greater-than-or-equal-to */
 	{ '{', "\317\200" },   		/* greek pi */
 	{ '|', "\342\211\240" },	/* not-equal */
 	{ '}', "\302\243" },		/* UK pound sign */
-	{ '~', "\302\267" }		/* bullet */
+	{ '~', "*"}		/* bullet */
 };
 
 /* Table mapping UTF-8 to ACS entries. */
